@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal E-commerce</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            color: #333;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .firm-icon {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: #3498db;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .category {
+            background: #ecf0f1;
+            padding: 4px 8px;
+            border-radius: 3px;
+            font-size: 0.8em;
+        }
+        
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul li:before {
+            content: "•";
+            color: #3498db;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>E-commerce Products</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>E-commerce Firm</th>
+                    <th>Icon</th>
+                    <th>Product Name</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Wireless Earbuds</td>
+                    <td><span class="category">Electronics</span></td>
+                    <td>
+                        <ul>
+                            <li>Bluetooth 5.0</li>
+                            <li>24hr battery</li>
+                            <li>Noise cancellation</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Smart Watch</td>
+                    <td><span class="category">Electronics</span></td>
+                    <td>
+                        <ul>
+                            <li>Heart rate monitor</li>
+                            <li>GPS tracking</li>
+                            <li>Water resistant</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flipkart</td>
+                    <td><div class="firm-icon">F</div></td>
+                    <td>Running Shoes</td>
+                    <td><span class="category">Sports</span></td>
+                    <td>
+                        <ul>
+                            <li>Lightweight design</li>
+                            <li>Air cushion</li>
+                            <li>Multiple colors</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Myntra</td>
+                    <td><div class="firm-icon">M</div></td>
+                    <td>Denim Jacket</td>
+                    <td><span class="category">Fashion</span></td>
+                    <td>
+                        <ul>
+                            <li>100% cotton</li>
+                            <li>Regular fit</li>
+                            <li>Machine wash</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Laptop Stand</td>
+                    <td><span class="category">Accessories</span></td>
+                    <td>
+                        <ul>
+                            <li>Aluminum alloy</li>
+                            <li>Adjustable height</li>
+                            <li>Portable</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>eBay</td>
+                    <td><div class="firm-icon">E</div></td>
+                    <td>Camera Lens</td>
+                    <td><span class="category">Photography</span></td>
+                    <td>
+                        <ul>
+                            <li>50mm prime</li>
+                            <li>f/1.8 aperture</li>
+                            <li>Auto focus</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Desk Lamp</td>
+                    <td><span class="category">Home</span></td>
+                    <td>
+                        <ul>
+                            <li>LED technology</li>
+                            <li>Adjustable arm</li>
+                            <li>Touch control</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Myntra</td>
+                    <td><div class="firm-icon">M</div></td>
+                    <td>Sports T-shirt</td>
+                    <td><span class="category">Fashion</span></td>
+                    <td>
+                        <ul>
+                            <li>Quick dry</li>
+                            <li>Moisture wicking</li>
+                            <li>UV protection</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flipkart</td>
+                    <td><div class="firm-icon">F</div></td>
+                    <td>Backpack</td>
+                    <td><span class="category">Accessories</span></td>
+                    <td>
+                        <ul>
+                            <li>Water resistant</li>
+                            <li>Laptop compartment</li>
+                            <li>Multiple pockets</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Phone Case</td>
+                    <td><span class="category">Accessories</span></td>
+                    <td>
+                        <ul>
+                            <li>Shockproof</li>
+                            <li>Wireless charging</li>
+                            <li>Multiple designs</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>eBay</td>
+                    <td><div class="firm-icon">E</div></td>
+                    <td>Vintage Watch</td>
+                    <td><span class="category">Fashion</span></td>
+                    <td>
+                        <ul>
+                            <li>Automatic movement</li>
+                            <li>Leather strap</li>
+                            <li>Limited edition</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Bluetooth Speaker</td>
+                    <td><span class="category">Electronics</span></td>
+                    <td>
+                        <ul>
+                            <li>360° sound</li>
+                            <li>12hr battery</li>
+                            <li>IPX7 waterproof</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Myntra</td>
+                    <td><div class="firm-icon">M</div></td>
+                    <td>Sunglasses</td>
+                    <td><span class="category">Fashion</span></td>
+                    <td>
+                        <ul>
+                            <li>UV protection</li>
+                            <li>Polarized lenses</li>
+                            <li>Lightweight frame</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Flipkart</td>
+                    <td><div class="firm-icon">F</div></td>
+                    <td>Yoga Mat</td>
+                    <td><span class="category">Sports</span></td>
+                    <td>
+                        <ul>
+                            <li>Non-slip surface</li>
+                            <li>Eco-friendly</li>
+                            <li>Extra thick</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Amazon</td>
+                    <td><div class="firm-icon">A</div></td>
+                    <td>Tablet</td>
+                    <td><span class="category">Electronics</span></td>
+                    <td>
+                        <ul>
+                            <li>10-inch display</li>
+                            <li>64GB storage</li>
+                            <li>Stylus support</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
